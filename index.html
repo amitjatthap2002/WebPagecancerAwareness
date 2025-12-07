@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancer Awareness & Support</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🏥 Cancer Awareness</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#quotes">Inspiration</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&h=600&fit=crop" alt="Cancer Awareness Banner" class="hero-image">
+        <div class="hero-content">
+            <h1>Cancer Awareness & Support</h1>
+            <p>Together we can make a difference. Get informed, stay strong, and support those in need.</p>
+            <a href="#contact" class="cta-button">Join Us Today</a>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <h2>Why Cancer Awareness Matters</h2>
+            <p>Early detection saves lives. Education empowers communities. Support heals hearts. Our mission is to provide resources, information, and a compassionate community for cancer patients, survivors, and their families.</p>
+        </div>
+    </section>
+
+    <section id="quotes" class="quotes-section">
+        <div class="container">
+            <h2>Daily Inspiration</h2>
+            <p class="quotes-subtitle">Words of strength and hope</p>
+            <div class="quotes-container">
+                <div class="quote-card">
+                    <p id="quoteText" class="quote-text">"Loading inspiration..."</p>
+                    <p id="quoteAuthor" class="quote-author">— Author</p>
+                </div>
+                <button class="refresh-button" onclick="fetchQuote()">Get New Quote</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>Have questions or want to share your story? We'd love to hear from you.</p>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+            <div id="formMessage" class="form-message"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Cancer Awareness & Support. Together for a healthier tomorrow.</p>
+            <p>🤝 Dedicated to survivors, fighters, and supporters worldwide.</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
